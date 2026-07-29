@@ -1,0 +1,33 @@
+name: pwvault
+description: 本機端多設定檔密碼管理工具
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cryptography: ^2.7.0
+  path_provider: ^2.1.4
+  file_picker: ^11.0.2
+  csv: ^6.0.0
+  crypto: ^3.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+dependency_overrides:
+  file_picker:
+    path: packages/file_picker_patched
+
+flutter_launcher_icons:
+  android: true
+  image_path: "assets/icon/icon.png"
